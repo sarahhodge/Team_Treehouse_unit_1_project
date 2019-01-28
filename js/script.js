@@ -26,7 +26,20 @@ var quotes = [
   },
      { quote: "Before anything else, preparation is the key to success.",
        source: "Alexander Graham Bell"
-  }
+  },
+    { quote: "The way to get started is to quit talking and begin doing.",
+      source: "Walt Disney"
+  },
+    { quote: "You only live once, but if you do it right, once is enough.",
+      source: "Mae West"
+  },
+    { quote: "All you need is love. But a little chocolate now and then doesn't hurt.",
+      source: "Charles M. Schulz"
+  },
+   {  quote: "Some people say, 'Never let them see you cry.' I say, if you're so mad you could just cry, then cry. It terrifies everyone.",
+      source: "Tina Fey",
+      citation: "Bossypants"
+   }
 
 ];
 
@@ -67,8 +80,8 @@ function printQuote() {
 printQuote();
 
 //the interval function will reload the quote every 7 seconds
-setInterval(printQuote, 7000);
-
+setInterval(printQuote, 9000);
+//code from https://www.w3schools.com/jsref/met_win_setinterval.asp
 
 //this is a button that will call the printQuote function
 document.getElementById('loadQuote').addEventListener("click", printQuote, false)
