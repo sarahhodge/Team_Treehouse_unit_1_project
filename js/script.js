@@ -45,28 +45,30 @@ function printQuote() {
   var randomColor= Math.floor(Math.random()*16777215).toString(16);
   var message= "";
       message += '<p class= "quote">' + random.quote + '</p>'
-      message += '<p class= "source">' + random.source + '</p>'
+      message += '<p class= "source">' + random.source
       if (random.citation){
           message += '<span class= "citation">' + random.citation + '</span>';
         }
       if (random.year){
           message += '<span class= "year">' + random.year + '</span>';
-        }
+        } + '</p>'
   document.getElementById("quote-box").innerHTML = message;
+
+  //this is a function that will change the backgound color each time the page refreshes
+  // code from https://www.codespeedy.com/generate-random-hex-css-color-code-in-javascript
+  function getRandomColor() {
+      color = 1 << 24;
+
+      return '#'+(Math.floor(color*Math.random()) + color).toString(16).slice(-6);
+   }
+
+  document.body.style.backgroundColor = getRandomColor()
 };
 printQuote();
 
-//this is a function that will change the backgound color each time the page refreshes
-// code from https://www.codespeedy.com/generate-random-hex-css-color-code-in-javascript/
-
-function getRandomColor() {
-    color = 1 << 24;
-
-    return '#'+(Math.floor(color*Math.random()) + color).toString(16).slice(-6);
- }
-
-document.body.style.backgroundColor = getRandomColor();
+//the interval function will reload the quote every 7 seconds
+setInterval(printQuote, 7000);
 
 
 //this is a button that will call the printQuote function
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+document.getElementById('loadQuote').addEventListener("click", printQuote, false)
