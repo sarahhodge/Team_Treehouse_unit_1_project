@@ -28,10 +28,8 @@ var quotes = [
        citation: "A Walk to Remember",
        year: 1999
   },
-     { quote: "The marks humans leave are too often scars.",
-       source: "John Green",
-       citation: "The Fault in Our Stars",
-       year: 2012
+     { quote: "We would accomplish many more things if we did not think of them as impossible.",
+       source: "Vince Lombardi"
   },
      { quote: "A brave man acknowledges the strength of others.",
        source: "Veronica Roth",
@@ -43,11 +41,9 @@ var quotes = [
        citation: "The Help",
        year: 2009
   },
-     { quote: "I must learn to be content with being happier than I deserve.",
-       source: "Jane Austen",
-       citation: "Pride and Prejudice",
-       year: 1813
-     }
+     { quote: "Before anything else, preparation is the key to success.",
+       source: "Alexander Graham Bell"
+  }
 
 ];
 
