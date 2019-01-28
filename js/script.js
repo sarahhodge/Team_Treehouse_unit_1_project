@@ -66,8 +66,7 @@ function getRandomColor() {
  }
 
 document.body.style.backgroundColor = getRandomColor();
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
 //this is a button that will call the printQuote function
-//document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+document.getElementById('loadQuote').addEventListener("click", printQuote, false);
