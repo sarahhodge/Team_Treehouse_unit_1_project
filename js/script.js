@@ -61,7 +61,7 @@ var quotes = [
 function getRandomQuote(array){
   var randomQuote = array[ Math.floor(Math.random()* array.length)];
 
-  return randomQuote;
+  console.log(randomQuote);
   };
 
 
@@ -91,7 +91,7 @@ getRandomQuote(quotes);
   comment.
 ***/
 
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+//document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
